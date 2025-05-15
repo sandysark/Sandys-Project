@@ -1,48 +1,194 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
     padding: 0;
-    margin: 0;    
+    margin: 0;
+}
+
+.details {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-style: italic;
 }
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/img3.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/img3.jpeg);
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
     height: 100vh;
 }
 
-h1{
-    font-size: 4*x-large ;
+h1 {
+    font-size: 4*x-large;
 }
-nav{
+
+.navigation-bar {
     display: flex;
     gap: 5rem;
-    justify-content: center;
-
+    justify-content: space-between;
+    /* color: black; */
+    background-color: aqua;
+    height: 60px;
+    padding: 0 130px 0 120px;
+    align-items: center;
 }
-.navlinks{
+
+.navigation-bar a {
+    color: black;
+    
+}
+
+
+.navlinks {
     display: flex;
     gap: 15px;
-
 }
+
+
 .navlinks li {
     list-style-type: none;
     text-decoration: none;
 }
-header a{
+
+
+.navlinks a {
+    color: black;
+}
+
+header a {
     text-decoration: none;
     color: white;
 
-}header a:hover{
+}
+
+header a:hover {
     color: blue;
 }
-.header-text{
+
+.header-text {
     color: white;
     padding: 60px 20px;
     text-align: center;
 }
 
 .header-text h1 {
+    font-size: 100px;
     gap: 50px;
-    margin-bottom: 40px 
+    margin-bottom: 40px
+}
+
+.header-text h2 {
+    font-family: "Dancing Script", cursive;
+}
+
+.headerbtn {
+    border-radius: 50px;
+    /* Adjust the value to control the roundness */
+    padding: 10px 20px;
+    color: red;
+    background-color: green;
+}
+
+.details img{
+    width: 20px;
+    padding-right: 9px;
+}
+
+.details p {
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+.customer-service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    /* height: 80px; */
+}
+
+.product-description{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.product-img-3{
+    width: 143px;
+}
+
+.footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 40px 20px 20px;
+  
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-about-p{
+    width: 20%;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-pages{
+    display: block;
+}
+
+.social-icons a {
+  display: block;
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.quick-icons a {
+  display: block;
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 14px;
 }
